@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoalphabetic Cipher Converter</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monoalphabetic Cipher Converter</h1>
+        
+        <section>
+            <h2>Encrypt Plaintext</h2>
+            <form id="encryptForm">
+                <label for="plainText">Plaintext:</label>
+                <input type="text" id="plainText" name="plainText" required>
+                
+                <label for="encryptionKey">Cipher Key :</label>
+                <input type="text" id="encryptionKey" name="encryptionKey" required>
+                
+                <button type="submit">Encrypt</button>
+            </form>
+            <div id="encryptionResult">
+                <p><strong>Encrypted Text:</strong></p>
+                <pre id="encryptedText"></pre>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Decrypt Ciphertext</h2>
+            <form id="decryptForm">
+                <label for="cipherText">Ciphertext:</label>
+                <input type="text" id="cipherText" name="cipherText" required>
+                
+                <label for="decryptionKey">Cipher Key </label>
+                <input type="text" id="decryptionKey" name="decryptionKey" required>
+                
+                <button type="submit">Decrypt</button>
+            </form>
+            <div id="decryptionResult">
+                <p><strong>Decrypted Text:</strong></p>
+                <pre id="decryptedText"></pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

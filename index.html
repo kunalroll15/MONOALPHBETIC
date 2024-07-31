@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoalphabetic Key Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monoalphabetic Key Finder</h1>
+        <form id="keyForm">
+            <label for="plaintext">Plaintext:</label>
+            <input type="text" id="plaintext" name="plaintext" required>
+            
+            <label for="ciphertext">Ciphertext:</label>
+            <input type="text" id="ciphertext" name="ciphertext" required>
+            
+            <button type="submit">Find Key</button>
+        </form>
+        
+        <div id="results">
+            <h2>Results</h2>
+            <p><strong>Key (plaintext to ciphertext):</strong></p>
+            <pre id="keyResult"></pre>
+            <p><strong>Reverse Key (ciphertext to plaintext):</strong></p>
+            <pre id="reverseKeyResult"></pre>
+            <p><strong>26-Letter Key:</strong></p>
+            <pre id="fullKeyResult"></pre>
+        </div>
+    </div>
+    <li><a href="index1.html">converter</a></li>
+
+    <script src="script.js"></script>
+</body>
+</html>
